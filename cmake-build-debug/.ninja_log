@@ -1,0 +1,17 @@
+# ninja log v5
+1	73	7308671420253815	build.ninja	2dc8b2b7282fbb7b
+2	177	7308664123225597	CMakeFiles/StockMarket.dir/src/models/StockMarketV1/StockMarketV1.cpp.obj	22930fdf4db54afd
+282	357	7308664125005598	StockMarket.exe	266ec3d5a25d266d
+5	33	7308664121785599	CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj	6ac72b76a45d5e4f
+3	240	7308664123855597	CMakeFiles/StockMarket.dir/main.cpp.obj	937d075b90c558a4
+0	282	7308664124275597	CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj	c9f9be99a4b985d4
+4	181	7308673084534431	CMakeFiles/StockMarket.dir/src/models/StockMarketV1/StockMarketV1.cpp.obj	22930fdf4db54afd
+9	225	7308673084974428	CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj	6ac72b76a45d5e4f
+6	301	7308673085734429	CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj	c9f9be99a4b985d4
+2	333	7308673086054429	CMakeFiles/StockMarket.dir/main.cpp.obj	937d075b90c558a4
+333	398	7308673086684431	StockMarket.exe	266ec3d5a25d266d
+4	182	7308674798050206	CMakeFiles/StockMarket.dir/src/models/StockMarketV1/StockMarketV1.cpp.obj	22930fdf4db54afd
+6	223	7308674798460210	CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj	6ac72b76a45d5e4f
+9	280	7308674799020209	CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj	c9f9be99a4b985d4
+1	321	7308674799440211	CMakeFiles/StockMarket.dir/main.cpp.obj	937d075b90c558a4
+321	390	7308674800100212	StockMarket.exe	266ec3d5a25d266d

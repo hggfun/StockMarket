@@ -1,0 +1,3 @@
+C:/Users/Алим/CLionProjects/StockMarket/cmake-build-debug/CMakeFiles/StockMarket.dir
+C:/Users/Алим/CLionProjects/StockMarket/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Алим/CLionProjects/StockMarket/cmake-build-debug/CMakeFiles/rebuild_cache.dir
