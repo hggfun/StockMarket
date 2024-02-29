@@ -1,12 +1,10 @@
-//
-// Created by Алим on 29.02.2024.
-//
-
 #ifndef STOCKMARKET_HELPERS_H
 #define STOCKMARKET_HELPERS_H
 
 
 #pragma once
+
+#include <ostream>
 
 namespace StockMarket {
 
@@ -24,7 +22,15 @@ namespace StockMarket {
 
         bool operator<(const Request& other) const {return price < other.price;};
         bool operator==(const Request& other) const {return price == other.price && amount == other.amount && type == other.type;};
+
+        [[nodiscard]] std::string to_string() const {
+            return "Price: " + std::to_string(price) + " Amount: " + std::to_string(amount) + " Type: " + (type == RequestType::Buy ? "Buy" : "Sell");
+        }
     };
+
+//    std::ostream& operator<<(std::ostream& stream, const Request& request) {
+//        return stream << "Price: " << request.price << " Amount: " << request.amount << " Type: " << (request.type == RequestType::Buy ? "Buy" : "Sell");
+//    }
 
 } //end of namespace
 

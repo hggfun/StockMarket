@@ -1,10 +1,10 @@
 #include "StockMarketV1.h"
-#include "../../helpers/helpers.h"
 #include "../../helpers/exceptions.h"
 
 #include <set>
 #include <vector>
 #include <utility>
+#include <iostream>
 
 namespace StockMarket {
     void StockMarketV1::addRequest(const Request& request) {
@@ -39,20 +39,21 @@ namespace StockMarket {
     std::pair<std::vector<Request>, std::vector<Request>> StockMarketV1::displayTopRequests() {
         std::vector<Request> topBuyRequests, topSellRequests;
 
-        auto current = buyRequests.begin();
-        auto end = buyRequests.end();
+        auto current = buyRequests.end();
+        auto begin = buyRequests.begin();
         for (int i = 0; i < 10; ++i) {
-            if (current == end) break;
+            if (current == begin) break;
+            current--;
             topBuyRequests.push_back(*current);
         }
 
         current = sellRequests.begin();
-        end = sellRequests.end();
+        auto end = sellRequests.end();
         for (int i = 0; i < 10; ++i) {
             if (current == end) break;
             topSellRequests.push_back(*current);
+            current++;
         }
-
         return {topBuyRequests, topSellRequests};
     }
 } // StockMarket

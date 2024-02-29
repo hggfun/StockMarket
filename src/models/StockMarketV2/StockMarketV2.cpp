@@ -1,12 +1,6 @@
-//
-// Created by Алим on 29.02.2024.
-//
-
 #include "StockMarketV2.h"
-#include "../../helpers/helpers.h"
 #include "../../helpers/exceptions.h"
 
-#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <utility>
@@ -51,24 +45,29 @@ namespace StockMarket {
     }
 
     std::pair<std::vector<Request>, std::vector<Request>> StockMarketV2::displayTopRequests() {
-        std::sort(buyRequests.begin(), buyRequests.end());
-        std::sort(sellRequests.begin(), sellRequests.end());
-
         std::vector<Request> topBuyRequests, topSellRequests;
 
-        auto current = buyRequests.begin();
-        auto end = buyRequests.end();
-        for (int i = 0; i < 10; ++i) {
-            if (current == end) break;
-            topBuyRequests.push_back(*current);
+        for (auto request : buyRequests) {
+            if (topBuyRequests.size() < 10) {
+                topBuyRequests.push_back(request);
+            } else {
+                if (topBuyRequests.front() < request)
+                    topBuyRequests.front() = request;
+                std::sort(topBuyRequests.begin(), topBuyRequests.end());
+            }
+        }
+        std::reverse(topBuyRequests.begin(), topBuyRequests.end());
+
+        for (auto request : sellRequests) {
+            if (topSellRequests.size() < 10) {
+                topSellRequests.push_back(request);
+            } else {
+                if (request < topSellRequests.back())
+                    topSellRequests.back() = request;
+                std::sort(topSellRequests.begin(), topSellRequests.end());
+            }
         }
 
-        current = sellRequests.begin();
-        end = sellRequests.end();
-        for (int i = 0; i < 10; ++i) {
-            if (current == end) break;
-            topSellRequests.push_back(*current);
-        }
         return {topBuyRequests, topSellRequests};
     }
 } // StockMarket

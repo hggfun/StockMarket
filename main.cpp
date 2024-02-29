@@ -1,18 +1,15 @@
-#include "src/helpers/helpers.h"
 #include "src/helpers/exceptions.h"
-#include "src/checkers/StockMarketChecker.cpp"
+#include "src/checkers/StockMarketChecker.h"
 #include "src/models/StockMarketV1/StockMarketV1.h"
 #include "src/models/StockMarketV2/StockMarketV2.h"
 
 
 int main() {
-
     StockMarket::StockMarketChecker<StockMarket::StockMarketV1> tester;
+    tester.doAllChecks();
 
-    tester.testTimeAddRequest();
-    tester.testTimeRemoveRequest();
-    tester.testTimeModifyRequest();
-    tester.testTimeDisplayTopRequests();
+    StockMarket::StockMarketChecker<StockMarket::StockMarketV2> tester2;
+    tester2.doAllChecks();
 
     return 0;
 }

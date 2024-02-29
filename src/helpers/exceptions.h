@@ -1,7 +1,3 @@
-//
-// Created by Алим on 29.02.2024.
-//
-
 #ifndef STOCKMARKET_EXCEPTIONS_H
 #define STOCKMARKET_EXCEPTIONS_H
 

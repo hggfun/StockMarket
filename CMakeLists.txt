@@ -10,5 +10,5 @@ add_executable(StockMarket main.cpp
         src/models/StockMarketV1/StockMarketV1.h
         src/models/StockMarketV2/StockMarketV2.cpp
         src/models/StockMarketV2/StockMarketV2.h
-        src/checkers/StockMarketChecker.cpp
+        src/checkers/StockMarketChecker.h
 )

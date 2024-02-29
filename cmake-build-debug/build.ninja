@@ -67,12 +67,6 @@ build CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj:
   OBJECT_DIR = CMakeFiles\StockMarket.dir
   OBJECT_FILE_DIR = CMakeFiles\StockMarket.dir\src\models\StockMarketV2
 
-build CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj: CXX_COMPILER__StockMarket_unscanned_Debug C$:/Users/Алим/CLionProjects/StockMarket/src/checkers/StockMarketChecker.cpp || cmake_object_order_depends_target_StockMarket
-  DEP_FILE = CMakeFiles\StockMarket.dir\src\checkers\StockMarketChecker.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\StockMarket.dir
-  OBJECT_FILE_DIR = CMakeFiles\StockMarket.dir\src\checkers
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target StockMarket
@@ -81,7 +75,7 @@ build CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj: CXX_CO
 #############################################
 # Link the executable StockMarket.exe
 
-build StockMarket.exe: CXX_EXECUTABLE_LINKER__StockMarket_Debug CMakeFiles/StockMarket.dir/main.cpp.obj CMakeFiles/StockMarket.dir/src/models/StockMarketV1/StockMarketV1.cpp.obj CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj CMakeFiles/StockMarket.dir/src/checkers/StockMarketChecker.cpp.obj
+build StockMarket.exe: CXX_EXECUTABLE_LINKER__StockMarket_Debug CMakeFiles/StockMarket.dir/main.cpp.obj CMakeFiles/StockMarket.dir/src/models/StockMarketV1/StockMarketV1.cpp.obj CMakeFiles/StockMarket.dir/src/models/StockMarketV2/StockMarketV2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\StockMarket.dir
